@@ -11,7 +11,7 @@ html, body, #root, .App {
   display:grid;
   
   grid-template-columns: repeat(32, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-rows: repeat(18, 1fr);
   justify-content: space-evenly;
 
 }
@@ -22,9 +22,10 @@ html, body, #root, .App {
   grid-row: 1 / span 2;
 }
 .header {
-  text-align: center;
+  text-align: left;
   text-decoration-line: underline;
   padding: 0 0 5px 0;
+  padding-left: 17px;
   margin: 0;
 }
 
@@ -35,7 +36,7 @@ html, body, #root, .App {
   padding: 0;
   margin: 0;
 
-  background-color: #ccc;
+  /* background-color: #ccc; */
   grid-column: 3 / span 3;
   grid-row: 3 / span 5;
 }
@@ -43,4 +44,46 @@ html, body, #root, .App {
 .todo > div > ul {
   padding-top:0;
   margin-top:0;
+}
+
+.input {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timer {
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 0;
+  margin: 0;
+
+ /* background-color: #ccc; */
+  grid-column: 3 / span 4;
+  grid-row: 3 / span 4;
+}
+
+.centered {
+  text-align: center;
+}
+
+.toggle {
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 0;
+  margin: 0;
+
+ /* background-color: #ccc; */
+  grid-column: 1 / span 4;
+  grid-row: 5 / span 4;
+}
+
+.tracker {
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 0;
+  margin: 0;
+
+ /* background-color: #ccc; */
+  grid-column: 1 / span 3;
+  grid-row: 5 / span 4;
 }
