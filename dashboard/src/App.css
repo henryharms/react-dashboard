@@ -22,10 +22,10 @@ html, body, #root, .App {
   grid-row: 1 / span 2;
 }
 .header {
-  text-align: left;
+  text-align: center;
   text-decoration-line: underline;
   padding: 0 0 5px 0;
-  padding-left: 17px;
+  /*padding-left: 0;*/
   margin: 0;
 }
 
@@ -73,8 +73,8 @@ html, body, #root, .App {
   margin: 0;
 
  /* background-color: #ccc; */
-  grid-column: 1 / span 4;
-  grid-row: 5 / span 4;
+  grid-column: 5 / span 4;
+  grid-row: 3 / span 4;
 }
 
 .tracker {
@@ -86,4 +86,15 @@ html, body, #root, .App {
  /* background-color: #ccc; */
   grid-column: 1 / span 3;
   grid-row: 5 / span 4;
+}
+.title {
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+ /* background-color: #ccc; */
+  grid-column: 1 / span 7;
+  grid-row: 1 / span 2;
 }

@@ -182,7 +182,7 @@ class Timer extends React.Component {
   }
 }
 
-class WaterTracker extends React.Component {
+class WaterTracker extends React.Component { //sorry the content of this one is incomplete, didnt get around to it
   constructor(props) {
     super(props);
     this.state = {waterLevel:100};
@@ -192,14 +192,24 @@ class WaterTracker extends React.Component {
     return(
     <div className='tracker' style={{gridColumn: `${this.props.x} / span 3`, gridRow: `${this.props.y} / span 4`}}>
       <div>
-        <h2 className='header'>Water</h2>
+        <h2 className='header'>Water</h2> 
+        <div>*wip*</div>
+        <div>drink water!</div>
       </div>
     </div> 
     );
   }
 }
 
-
+function Title(props) {
+  return (
+    <div className='title' style={{gridColumn: `${props.x} / span 7`, gridRow: `${props.y} / span 2`}}>
+      <div>
+        <h1 className='text_title'>{props.text}</h1> 
+      </div>
+    </div> 
+  );
+}
 
 
 
@@ -207,8 +217,8 @@ class Dashboard extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {compoments:[<TodoList x={5} y={1}/>,
-    <Timer x={1} y ={1}/>,<WaterTracker x={9} y={1}/>],status:[true,true,true], type:['Todo List','Timer','Water']};
+    this.state = {compoments:[<TodoList x={1} y={3}/>,
+    <Timer x={5} y ={7}/>,<WaterTracker x={9} y={3}/>,<Title x={3} y={1} text={"my dashboard"}/>],status:[true,true,true,true], type:['Todo List','Timer','Water','Title']};
   }
   hide(i) {
     let status = this.state.status;
